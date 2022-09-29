@@ -45,7 +45,6 @@ const Carousel: React.FC<CarouselProps> = ({ cards, cardHeight }) => {
             {cards.map((card, index) => (
               <Card
                 currentSlide={currentSlide}
-                totalCards={cards.length}
                 cardHeight={cardHeight}
               >
                 {card}

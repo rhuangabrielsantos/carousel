@@ -17,6 +17,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Carousel cards={[1, 2, 3]} cardHeight={364} />
+    <Carousel cards={[1, 2, 3, 4, 5, 6]} cardHeight={364} />
   </React.StrictMode>
 );

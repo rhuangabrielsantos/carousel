@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const CarouselContainer = styled.div`
-  max-width: 1440px;
+  max-width: 1228px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -22,7 +22,6 @@ export const SlideShow = styled.div`
 
 export const Card = styled.div<{
   currentSlide: number;
-  totalCards: number;
   cardHeight: number;
 }>`
   height: ${({ cardHeight }) => `${cardHeight}px`};
@@ -33,10 +32,7 @@ export const Card = styled.div<{
   border-radius: 8px;
 
   transform: translateX(
-    ${({ currentSlide, totalCards }) =>
-      currentSlide + 2 === totalCards
-        ? `-${currentSlide * 638 - 205}px`
-        : `-${currentSlide * 638}px`}
+    ${({ currentSlide }) => `-${currentSlide * 638}px`}
   );
   transition: all 800ms ease-in-out;
 `;
